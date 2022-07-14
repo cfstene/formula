@@ -19,10 +19,15 @@
 /* COMPONENTS */ 
 {% include "../css/vendors/normalize.css" %}
 {% include "../css/components/navbar.css" %}
+{% include "../css/components/helpers.css" %}
 
 /* TEMP */
 body {
     font-family: {{cssFontFamily}};
+}
+
+.section {
+    padding: 50px 20px;
 }
 
 .container {

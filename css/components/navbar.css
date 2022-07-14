@@ -1,1 +1,8 @@
- 
+.navbar {
+    padding: 20px; 
+}
+
+.nav-items {
+    list-style: none;
+    gap: 20px;
+}
