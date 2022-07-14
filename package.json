@@ -1,8 +1,7 @@
 {
   "name": "formula",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A HubSpot Boilerplate theme",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

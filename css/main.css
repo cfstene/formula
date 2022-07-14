@@ -1,0 +1,16 @@
+:root {
+    /* FONT SETTINGS */ 
+    --font-family: 'Manrope'; 
+    --font-size: '18px;'; /* Sets the baseline font size. All additional classes use rem/em */
+
+    /* COLORS */ 
+    --primary-color: '#1354F5'; 
+    --secondary-color: '#378AF7'; 
+    --bg-dark: '#000761'; 
+    --bg-light: '#f8f8f8'; 
+
+    --font-color: '#000000'; 
+}
+
+{% include "../css/vendors/normalize.css" %}
+
