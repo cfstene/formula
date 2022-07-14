@@ -1,0 +1,15 @@
+.navbar {padding: 20px; }
+.nav-items {list-style: none;}
+
+.nav-item a {
+    cursor: pointer; 
+    text-decoration: none;
+    padding: 10px 0px; 
+    border-bottom: 2px solid transparent;
+    color: {{cssFontColor}}; 
+    transition: {{cssTransitionDuration}};
+}
+.nav-item a:hover {
+    color: {{cssPrimaryColor}};
+    border-bottom: 2px solid {{cssPrimaryColor}};
+}

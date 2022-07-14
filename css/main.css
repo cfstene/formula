@@ -3,11 +3,12 @@
 
 /* GLOBALS */
 {% set cssContainerWidth = '1340px' %}
+{% set cssTransitionDuration = '0.2s' %}
 
 /* FONT SETTINGS */
 {% set cssFontFamily = 'Manrope' %}
 {% set cssFontFamilyHeadings = 'Manrope' %}
-{% set cssBaseFontSize = '18px' %}
+{% set cssBaseFontSize = '16px' %}
 
 /* COLORS */
 {% set cssPrimaryColor = '#1354F5' %}
@@ -18,12 +19,15 @@
 
 /* COMPONENTS */ 
 {% include "../css/vendors/normalize.css" %}
-{% include "../css/components/navbar.css" %}
 {% include "../css/components/helpers.css" %}
+{% include "../css/components/navbar.css" %}
+{% include "../css/components/buttons.css" %}
+
 
 /* TEMP */
 body {
     font-family: {{cssFontFamily}};
+    font-size: {{cssBaseFontSize}};
 }
 
 .section {
