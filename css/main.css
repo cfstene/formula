@@ -2,31 +2,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300..700&display=swap');
 
 /* VARIABLES */
-:root {
-    /* LAYOUT */ 
-    --container-width: '1340px';
+{% set cssContainerWidth = '1340px' %}
 
-    /* FONT SETTINGS */ 
-    --font-family: 'Manrope'; 
-    --font-size: '18px;'; /* Sets the baseline font size. All additional classes use rem/em */
+/* FONT SETTINGS */
+{% set cssFontFamily = 'Manrope' %}
+{% set cssFontFamilyHeadings = 'Manrope' %}
+{% set cssBaseFontSize = '18px' %}
 
-    /* COLORS */ 
-    --primary-color: '#1354F5'; 
-    --secondary-color: '#378AF7'; 
-    --bg-dark: '#000761'; 
-    --bg-light: '#f8f8f8'; 
-    --font-color: '#000000'; 
-}
+/* COLORS */
+{% set cssPrimaryColor = '#1354F5' %}
+{% set cssSecondaryColor = '#378AF7' %}
+{% set cssBgDark = '#000761' %}
+{% set cssBgLight = '#f8f8f8' %}
+{% set cssFontColor = '#000000' %}
 
 /* COMPONENTS */ 
 {% include "../css/vendors/normalize.css" %}
 
 /* TEMP */
 body {
-    font-family: var(--font-family);
+    font-family: {{cssFontFamily}};
 }
 
 .container {
-    max-width: var(--container-width); 
+    max-width: {{cssContainerWidth}}; 
     margin: 0 auto;
 }
