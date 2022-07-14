@@ -1,4 +1,7 @@
 :root {
+    /* LAYOUT */ 
+    --container-width: '1340px';
+
     /* FONT SETTINGS */ 
     --font-family: 'Manrope'; 
     --font-size: '18px;'; /* Sets the baseline font size. All additional classes use rem/em */
@@ -14,3 +17,7 @@
 
 {% include "../css/vendors/normalize.css" %}
 
+.container {
+    max-width: var(--container-width); 
+    margin: 0 auto;
+}

@@ -1,5 +1,15 @@
 <!DOCUMENT html>
     <head>
-        <title>Hello world</title>
+        {% if page_meta.html_title %}<title>{{ page_meta.html_title }}</title>{% endif %}
+        {% if site_settings.favicon_src %}<link rel="shortcut icon" href="{{ site_settings.favicon_src }}" />{% endif %}
+        <meta name="description" content="{{ page_meta.meta_description }}">
+        {{ require_css(get_asset_url('../css/main.css')) }}
+        {{ standard_header_includes }}
     </head>
+
+    <body>
+    {% block body %}
+    {% endblock body %}
+    {{ standard_footer_includes }}
+    </body>
 </html>
