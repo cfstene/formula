@@ -8,8 +8,13 @@
     </head>
 
     <body>
+
+    {% block header %}
+        {% global_partial path='../globals/header.html' %}
+      {% endblock header %}
+        
     {% block body %}
     {% endblock body %}
     {{ standard_footer_includes }}
     </body>
-</html>
+</html> 
