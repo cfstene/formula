@@ -1,0 +1,74 @@
+/* FORM */
+
+form fieldset, .form-columns-1, .form-columns-2 {
+    max-width: 100% !important;
+}
+
+fieldset.form-columns-1 .hs-input {
+    width: 100%; 
+}
+
+/* INPUTS */ 
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"], 
+textarea {
+    padding: 12px;
+    margin: 5px 0px 15px 0px;
+    width: 100% !important;
+    border: 1px solid #333; 
+    border-radius: 4px;
+}
+
+textarea {
+    min-height: 200px; 
+}
+
+.hs-error-msgs {
+    margin-top: 0px;
+    list-style: none; 
+    padding-inline-start: 0px; 
+}
+
+.hs-error-msg {
+    font-size: 80%; 
+    color: #b40f0f; 
+}
+
+
+
+/* FORMS */
+.hs-attachment label {
+    display: none; 
+}
+
+input[type="file"] {
+    padding: 12px;
+    border: 1px solid #333; 
+    border-radius: 4px; 
+    width: 100% !important; 
+}
+
+
+/* GDPR */
+.legal-consent-container .hs-richtext p {
+    font-size: 13px;
+}
+
+.inputs-list {
+    padding-inline-start: 0px;
+}
+
+li.hs-form-booleancheckbox {
+    list-style: none; 
+    display: flex; 
+}
+
+.hs-form-booleancheckbox-display {
+    display: flex;
+}
+
+.hs-form-booleancheckbox-display input {
+    width: unset !important; 
+}

@@ -5,6 +5,7 @@
 
 {% set cssContainerWidth = '1340px' %}
 {% set cssTransitionDuration = '0.2s' %}
+{% set cssSectionPadding = '75px 20px' %}
 
 /* FONT SETTINGS */
 {% set cssFontFamily = 'Manrope' %}
@@ -26,13 +27,8 @@
 {% include "../css/components/typography.css" %}
 {% include "../css/components/navbar.css" %}
 {% include "../css/components/buttons.css" %}
+{% include "../css/components/forms.css" %}
 
 .dnd-section {
-    padding: 75px 20px;
-}
-
-@media ( max-width: 767px ) {
-    .dnd-section {
-        padding: 30px 20px;
-    }
+    padding: {{cssSectionPadding}};
 }

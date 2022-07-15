@@ -1,7 +1,7 @@
 {
-  "label" : "Formula",
+  "label" : "Formula - by Hubex",
   "preview_path" : null,
-  "screenshot_path" : null,
+  "screenshot_path" : "./assets/formula.jpg",
   "enable_domain_stylesheets" : false,
   "is_available_for_new_content" : true,
   "responsive_breakpoints" : [ {
