@@ -6,13 +6,10 @@
         {{ require_css(get_asset_url('../css/main.css')) }}
         {{ standard_header_includes }}
     </head>
-
     <body>
     {% global_partial path='../globals/header.html' %} 
-
     {% block body %}
     {% endblock body %}
-
     {{ standard_footer_includes }}
     </body>
 </html> 
