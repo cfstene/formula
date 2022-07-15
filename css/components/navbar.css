@@ -14,33 +14,3 @@
     color: {{cssPrimaryColor}};
     border-bottom: 2px solid {{cssPrimaryColor}};
 }
-
-
-/* BUTTONS - TO-DO: MOVE TO SEPERATE FILE */ 
-.btn {
-    cursor: pointer;
-    padding: 15px 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    transition: {{cssTransitionDuration}};
-}
-
-.btn-primary {
-    background-color: {{cssPrimaryColor}}; 
-    border: 1px solid {{cssPrimaryColor}};
-    color: #fff; 
-}
-
-.btn-primary:hover {
-    filter: brightness(85%);
-}
-
-.btn-secondary {
-    background-color: {{cssPrimaryColor}}1a;
-    border: 1px solid transparent;
-    color: {{cssPrimaryColor}};
-}
-
-.btn-secondary:hover {
-    background-color: {{cssPrimaryColor}}29;
-}

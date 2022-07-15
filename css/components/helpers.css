@@ -10,3 +10,8 @@
 .gap-md { gap: 10px; } 
 .gap-lg { gap: 20px; }
 .gap-xl { gap: 30px; }
+
+.mw-800 {max-width: 800px;}
+.mw-1000 {max-width: 1000px;}
+
+.mx-auto {margin: 0 auto;}

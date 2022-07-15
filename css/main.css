@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300..700&display=swap');
 
 /* GLOBALS */
+
 {% set cssContainerWidth = '1340px' %}
 {% set cssTransitionDuration = '0.2s' %}
 
@@ -19,22 +20,19 @@
 
 /* COMPONENTS */ 
 {% include "../css/vendors/normalize.css" %}
+{% include "../css/vendors/hubspot-grid.css" %}
+{% include "../css/components/base.css" %}
 {% include "../css/components/helpers.css" %}
+{% include "../css/components/typography.css" %}
 {% include "../css/components/navbar.css" %}
 {% include "../css/components/buttons.css" %}
 
-
-/* TEMP */
-body {
-    font-family: {{cssFontFamily}};
-    font-size: {{cssBaseFontSize}};
+.dnd-section {
+    padding: 75px 20px;
 }
 
-.section {
-    padding: 50px 20px;
+@media ( max-width: 767px ) {
+    .dnd-section {
+        padding: 30px 20px;
+    }
 }
-
-.container {
-    max-width: {{cssContainerWidth}}; 
-    margin: 0 auto;
-} 

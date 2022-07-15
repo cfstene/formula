@@ -1,0 +1,44 @@
+html, body {
+    font-family: {{cssFontFamily}};
+    font-size: {{cssBaseFontSize}};
+    line-height: 1.3;
+}
+
+p, a, ul, li {
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: {{cssFontFamilyHeadings}};
+}
+
+h1 {
+    font-size: 2.65rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 1.95rem;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 1.45rem; 
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 1.2rem; 
+    font-weight: 500;
+}
+
+h5 {
+    font-size: 1.1rem; 
+    font-weight: 500;
+}
+
+h6 {
+    font-size: 1.0rem; 
+    font-weight: 500;
+}
