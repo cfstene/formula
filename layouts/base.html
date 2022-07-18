@@ -10,6 +10,7 @@
     {% global_partial path='../globals/header.html' %} 
     {% block body %}
     {% endblock body %}
+    {{ require_js(get_asset_url('../js/main.css')) }}
     {{ standard_footer_includes }}
     </body>
 </html> 

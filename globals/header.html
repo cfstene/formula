@@ -1,28 +1,31 @@
 <!--
-  templateType: global_partial
-  label: Header
+templateType: global_partial
+label: Header
 -->
 <nav class="navbar">
-    <div class="container flex justify-between items-center">
-        <div class="nav-left flex items-center">
-            <div class="logo">
-                <a href="/">
-                    <img src="https://www.hubex.io/hubfs/Logo/original-horizontal-01.svg" alt="" width="130">
-                </a>
-            </div>
-            <div class="navigation">
-                <ul class="nav-items flex gap-xl">
-                    <li class="nav-item"><a href="#">Why Hubex</a></li>
-                    <li class="nav-item"><a href="#">Solutions</a></li>
-                    <li class="nav-item"><a href="#">Pricing</a></li>
-                    <li class="nav-item"><a href="#">Resources</a></li>
-                    <li class="nav-item"><a href="#">Company</a></li>
-                </ul>
-            </div>
+<div class="container flex justify-between items-center">
+    <div class="nav-left flex items-center">
+        <div class="logo">
+            <a href="/">
+                {# CHANGE LOGO SRC, ALT, AND WIDTH IN SETTINGS => PAGES => BRANDING #}
+                <img src="{{ site_settings.logo_src }}" alt="{{ site_settings.logo_alt }}" width="{{ site_settings.logo_width }}">
+            </a>
         </div>
-        <div class="nav-right flex gap-lg">
-            <a class="btn btn-secondary">Log in</a>
-            <a class="btn btn-primary">Get started</a>
-        </div>
+        {% menu "main_menu" 
+        id=79472361596, 
+        site_map_name="Default", 
+        overrideable=False, 
+        root_type="site_root", 
+        flyouts="true", 
+        max_levels="2", 
+        flow="horizontal", 
+        label="Navigation"
+        %}
     </div>
+
+    <div class="nav-right flex gap-lg">
+        <a class="btn btn-secondary">Log in</a>
+        <a class="btn btn-primary">Get started</a>
+    </div>
+</div>
 </nav> 

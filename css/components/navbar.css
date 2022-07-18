@@ -1,24 +1,28 @@
 .navbar {
-    position: fixed; 
-    width: 100%;
-    height: 3.75rem;
-    padding: 20px;
-    background-color: #fff; 
-    margin-bottom: 20px;
+position: fixed; 
+width: 100%;
+height: 3.75rem;
+padding: 20px;
+background-color: #fff; 
+margin-bottom: 20px;
 }
 
-.nav-items {list-style: none;}
-
-.nav-item a {
-    cursor: pointer; 
-    text-decoration: none;
-    padding: 10px 0px; 
-    border-bottom: 2px solid transparent;
-    color: {{cssFontColor}}; 
-    transition: {{cssTransitionDuration}};
+.hs-menu-wrapper ul {
+    list-style: none;
+    display: flex; 
+    gap: 30px; 
 }
 
-.nav-item a:hover {
-    color: {{cssPrimaryColor}};
-    border-bottom: 2px solid {{cssPrimaryColor}};
+.hs-menu-item a {
+cursor: pointer; 
+text-decoration: none;
+padding: 10px 0px; 
+border-bottom: 2px solid transparent;
+color: {{cssFontColor}}; 
+transition: {{cssTransitionDuration}};
+}
+
+.hs-menu-item a:hover {
+color: {{cssPrimaryColor}};
+border-bottom: 2px solid {{cssPrimaryColor}};
 }
